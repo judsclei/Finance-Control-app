@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="headerBar dark">
+        <div class="appName">Lista de Gastos</div>
+    </header>
+      <div id="componente1" class="component">
+        <a id="add" class="inclui" type="button"><i class="bi bi-plus-circle-fill"></i></a>
+        <div class="componentHeader">
+          <h1 class="componentTitle">Dividas a pagar</h1>
+        </div>
+        <div class="componentContent">
+          <div id="telaLimpa" class="telaLimpa">
+            <img src="./assets/Imgens telas/Icone_Contas_Pagas_ok.png" alt="">
+            <h1>Não ha debitos cadastrados.</h1>
+          </div>
+          <div>
+            <table id="tableGastos" class="table table-button hidden">
+              <thead>
+                <tr>
+                  <th>Nome </th>
+                  <th>Data Vencimento</th>
+                  <th>Valor</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+               <tr>
+
+               </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><label style="font-weight: bold;" for="">Valor Total: </label></td>
+                  <td><label id="total" for=""></label></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="componente2" class="component">
+        <div class="componentHeader">
+          <h1 class="componentTitle">Fechamento das contas</h1>
+        </div>
+        <div class="componentContent">
+          <div class="accordion">
+            <button class="btnAccordion" id="valorEntrada">Entrada</button>
+              <div class="panel">
+                <p id="textoEntrada"></p>
+                <div id="pEntrada" style="padding: 1.5em;">
+
+                </div>
+              </div>
+
+            <button class="btnAccordion" id="valorSaida">Saida</button>
+              <div class="panel">
+                <p id="textoSaida"></p>
+                <div id="pSaida" style="padding: 1.5em;">
+
+                </div>
+              </div>
+
+            <button class="btnAccordion" id="valorTotal">Total</button>
+              <div class="panel">
+                <p id="textoTotal"></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="componente3" class="component">
+        <a id="addRecurso" class="inclui" type="button"><i class="bi bi-plus-circle-fill"></i></a>
+        <div class="componentHeader">
+          <h1 class="componentTitle">Entrada de recursos</h1>
+        </div>
+        <div class="componentContent">
+          <div id="telaLimpaRecebimentos" class="telaLimpaRecebimentos">
+            <img src="./assets/Imgens telas/carteiraVazia.png" alt="">
+            <h1>Não ha recebimentos cadastrados.</h1>
+          </div>
+          <div>
+            <table id="tableRecebimentos" class="table table-button hidden">
+              <thead>
+                <tr>
+                  <th>Nome do recebimento</th>
+                  <th>Data</th>
+                  <th>Valor</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+               <tr>
+
+               </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><label style="font-weight: bold;" for="">Valor Total: </label></td>
+                  <td><label id="totalRecebimento" for=""></label></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="internoComponente1" class="component internal hidden">
+        <div class="componentHeader">
+          <h1 id="tituloCadastro" class="componentTitle"></h1>
+        </div>
+        <div class="componentContent">
+          <div class="field mt1">
+            <label id="lbNome" class="fifth">Nome da conta</label>
+            <input id="nome" type="text" autocomplete="off"/>
+          </div>
+          <div class="field mt1">
+            <label class="fifth">Valor</label>
+            <input id="valor" type="number" autocomplete="off" />
+          </div>
+          <div class="field mt1">
+            <label id="lbData" class="fifth">Data de vencimento</label>
+            <input id="data" type="date" />
+          </div>
+          <div class="btnCadTela center mt3">
+            <button id="salvar" class="button primary quarter"><i class="bi bi-save"></i> Salvar</button>
+            <button id="cancelar" class="button light quarter">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      <footer class="navBar">
+        <div id="menuPrincipal" class="buttonGroup">
+          <button id="tab1" class="button tab active" for="componente1"><i class="bi bi-person-lines-fill"></i> Lista de gastos</button>
+          <button id="tab2" class="button tab" for="componente2"><i class="bi bi-calculator-fill"></i> Fechamento</button>
+          <button id="tab3" class="button tab" for="componente3"><i class="bi bi-wallet2"></i> Carteira</button>
+        </div>
+      </footer>
+</body>
+</html>

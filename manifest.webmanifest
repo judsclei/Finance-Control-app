@@ -1,0 +1,52 @@
+{
+    "name": "Finance Control app",
+    "short_name": "Finance Control",
+    "author": "Vinicius de Castro",
+    "icon":"/assets/Imgens telas/Icone_Contas_Pagas_ok.png",
+    "description": "Seu app de controle de gastos",
+    "version": "1.0",
+    "lang": "pt-BR",
+    "start_url": "",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background-color": "#fff",
+    "theme_color": "#212121",
+    "icons":[
+        {
+            "src" : "/assets/Imgens telas/carteiraVazia.png",
+            "sizes":"500x500",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/Imgens telas/Icone_Contas_Pagas_ok.png",
+            "sizes":"200x200",
+            "type": "image/png"
+        },
+        {
+            "src" : "/assets/Imgens telas/icons/calculator-fill.svg",
+            "sizes":"16x16",
+            "type": "image/svg"
+        },
+        {
+            "src" : "/assets/Imgens telas/icons/person-lines-fill.svg",
+            "sizes":"16x16",
+            "type": "image/svg"
+        },
+        {
+            "src" : "/assets/Imgens telas/icons/plus-circle-fill.svg",
+            "sizes":"16x16",
+            "type": "image/svg"
+        },
+        {
+            "src" : "/assets/Imgens telas/icons/save.svg",
+            "sizes":"16x16",
+            "type": "image/svg"
+        },
+        {
+            "src" : "/assets/Imgens telas/icons/wallet2.svg",
+            "sizes":"16x16",
+            "type": "image/svg"
+        }],
+        "dir": "ltr"
+}

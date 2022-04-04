@@ -135,8 +135,8 @@ const printContas =() =>{
         tdDataVencimento.innerHTML = contas[i].dataVencimento.split('-').reverse().join('/');
         tdValor.innerHTML = 'R$ '+ contas[i].valor.toFixed(2);
         tdAcoes.innerHTML = `
-          <button id="editar" class="warning"><i class="bi bi-pencil-square"></i></button>
-          <button id="excluir" class="danger"><i class="bi bi-trash-fill"></i></button>
+          <button id="editar" class="warning"><i class="bi">&#9998;</i></button>
+          <button id="excluir" class="danger"><i class="bi">&#10005;</i></button>
         `;
         document.querySelector('#editar').onclick = () =>{
           ativaTela('#internoComponente1');
@@ -194,8 +194,8 @@ const printRecebimentos =() =>{
       tdDataRecebimento.innerHTML = receitas[i].dataRecebimento.split('-').reverse().join('/');
       tdValor.innerHTML = 'R$ '+ receitas[i].valor.toFixed(2);
       tdAcoes.innerHTML = `
-        <button id="editarReceitas" class="warning"><i class="bi bi-pencil-square"></i></button>
-        <button id="excluirReceitas" class="danger"><i class="bi bi-trash-fill"></i></button>
+        <button id="editarReceitas" class="warning"><i class="bi">&#9998;</i></button>
+        <button id="excluirReceitas" class="danger"><i class="bi">&#10005;</i></button>
       `;
       document.querySelector('#editarReceitas').onclick = () =>{
         ativaTela('#internoComponente1');
